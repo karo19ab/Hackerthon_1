@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F&oslash;rste hjemmeside ft. Javascript</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-color:powderblue;">
+    <center><h1>Velkommen til denne hjemmeside</h1></center>
+    <!--Hele idéen med min hjemmeside er, at man skal logge ind for at kunne få linket til min instagram-->
+    <b>Hvis du &oslash;nsker at f&oslash;lge mig p&aring; insta, venligst lav en ny bruger og log in neden for</b>
+
+
+    <h3>Register</h3>
+
+    <form id="register-form">
+        <input id="username" type="text" placeholder="Username" value=""/>
+        <input id="password" type="password" placeholder="Password" value=""/>
+        <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()"/>
+    </form>
+
+
+
+
+    <h3>Show user</h3>
+    <input id="list_users_btn" type="submit" value="Show user" onClick="showUser()"/>
+    <h3>Login</h3>
+    <form id="login-form">
+        <input id="enteredName" type="text" placeholder="Enter Username" value=""/>
+        <input id="enteredPass" type="password" placeholder="Enter Password" value=""/>
+        <input id="login_btn" type="submit" value="Login" onClick="checkLogin()"/>
+    </form>
+
+    <h2>See link to my insta!</h2>
+    <form id="login-form">
+        <input id="enteredName" type="text" placeholder="Enter Username" value=""/>
+        <input id="enteredPass" type="password" placeholder="Enter Password" value=""/>
+        <input id="login_btn" type="submit" value="Login" onClick="showInsta()"/>
+    </form>
+
+    <h3>Clear user</h3>
+    <input id="clear_users_btn" type="submit" value="Clear user" onClick="clearUser()"/>
+
+    <script src="app.js"> </script>
+
+    </body>
+    </html>
